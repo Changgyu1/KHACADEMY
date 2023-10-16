@@ -1,0 +1,16 @@
+CMD
+sqlplus sys/oracle as sysdba   
+// 최고권한
+
+ALTER SESSION SET "_ORACLE_SCRIPT" = TRUE;
+//세션이 변경되었습니다
+
+CREATE USER (사용자ID) IDENTIFIED BY (패스워드);
+//사용자가 생성되었습니다.
+
+GRANT CREATE SESSION TO (사용자ID);
+//권한이 부여되었습니다.
+GRANT CREATE ANY TABLE TO (사용자ID);
+//권한이 부여되었습니다.
+revoke
+grant connect, resource, dba to (사용자ID);
