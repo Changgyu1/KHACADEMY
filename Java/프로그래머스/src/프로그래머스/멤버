@@ -1,0 +1,11 @@
+public class a{
+	이름;
+	나이;
+	키;
+	// 멤버변수
+}
+public Student(이름,나이,키){   <<< 매개변수 // 매시간마다 필요한 변수의 갯수
+
+}
+
+public Student
