@@ -1,0 +1,3 @@
+git init
+git remote add origin 주소
+git checkout -b 이름
